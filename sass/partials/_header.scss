@@ -1,0 +1,44 @@
+// Header
+#header {
+    margin: 30px 0px;
+    display: flex;
+}
+
+#nav {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+#button {
+    width: 20%;
+}
+
+#sign-btn {
+    border-style: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: $color-primary;
+    color: white;
+}
+
+#login-btn {
+    border-style: none;
+    padding: 5px 10px;
+    background-color: #f5f7fa;
+    color: $color-primary;
+    font-weight: bold;
+}
+
+#nav a {
+    font-size: 0.70;
+    font-weight: 100;
+    color: #000;
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    width: 20%;
+}

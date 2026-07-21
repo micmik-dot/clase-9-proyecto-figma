@@ -1,5 +1,4 @@
-$colorMain: #3498db;
-
-body {
-  background-color: $colorMain;
-}
+@import "lib/reset";
+@import "settings";
+@import "partials/tag-general";
+@import "partials/header";
