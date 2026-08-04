@@ -1,18 +1,26 @@
 // Header
 #header {
-    margin: 30px 0px;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 20px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #nav {
     width: 60%;
     display: flex;
     justify-content: center;
-    gap: 24px;
+    align-items: center;
+    gap: 30px;
 }
 
 #button {
     width: 20%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
 }
 
 #sign-btn {
@@ -21,14 +29,18 @@
     border-radius: 3px;
     background-color: $color-primary;
     color: white;
+    transition: .3s;
 }
 
 #login-btn {
-    border-style: none;
-    padding: 5px 10px;
-    background-color: #f5f7fa;
+       border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #F5F7FA;
     color: $color-primary;
     font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
 }
 
 #nav a {
@@ -39,6 +51,7 @@
 }
 
 #logo {
+    align-items: center;
     display: flex;
     width: 20%;
 }
@@ -135,5 +148,24 @@
         img{
             width:100%;
         }
+    }
+}
+
+@media (max-width: 768px){
+
+    #header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #logo,
+    #nav,
+    #button{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #nav{
+        flex-wrap: wrap;
     }
 }

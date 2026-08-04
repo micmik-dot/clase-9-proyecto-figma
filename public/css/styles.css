@@ -345,6 +345,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   background-color: #F5F7FA;
+  line-height: 1.6;
 }
 
 h1 {
@@ -376,22 +377,31 @@ h4 {
 
 p {
   color: #717171;
+  line-height: 1.7;
 }
 
 #header {
-  margin: 30px 0px;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 0 20px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav {
   width: 60%;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
+  gap: 30px;
 }
 
 #button {
   width: 20%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
 }
 
 #sign-btn {
@@ -400,14 +410,18 @@ p {
   border-radius: 3px;
   background-color: #4CAF4F;
   color: white;
+  transition: 0.3s;
 }
 
 #login-btn {
-  border-style: none;
-  padding: 5px 10px;
-  background-color: #f5f7fa;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background-color: #F5F7FA;
   color: #4CAF4F;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #nav a {
@@ -418,6 +432,7 @@ p {
 }
 
 #logo {
+  align-items: center;
   display: flex;
   width: 20%;
 }
@@ -506,6 +521,22 @@ p {
 }
 .more-info .more-info-img img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #logo,
+  #nav,
+  #button {
+    width: 100%;
+    justify-content: center;
+  }
+  #nav {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
